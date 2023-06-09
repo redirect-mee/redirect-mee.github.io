@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect Page</title>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+
+  <script>
+    // Extract the current URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Construct the new URI with the parameters
+    const redirectUri = 'http://localhost/profile?' + urlParams.toString();
+
+    // Redirect to the new URI
+    window.location.href = redirectUri;
+  </script>
+</body>
+</html>
